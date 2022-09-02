@@ -6,13 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
 #### author: Ashley Guevara
+### Added
 - GAvatar component and story
 - GCard component and story
 - GLoader component and story
 - GTag component and story
 - Changelog
+
+
+### Removed
+- Unused packages
+
 
 
 ## [0.0.1] - 2022-09-01
