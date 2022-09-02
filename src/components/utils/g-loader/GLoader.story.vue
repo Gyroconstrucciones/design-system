@@ -14,7 +14,7 @@ const state = reactive({
       <GLoader v-bind="state" />
     </Variant>
     <Variant title="Customized">
-      <GLoader v-bind="state" class="text-red-500 text-5xl" />
+      <GLoader v-bind="state" class="!text-red-500 !text-5xl" />
     </Variant>
   </Story>
 </template>

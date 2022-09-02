@@ -12,11 +12,11 @@ const stateImg = reactive({
   image:
     'https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBib3l8ZW58MHx8MHx8&w=1000&q=80',
 })
-const styled = reactive({
-  label: 'Google',
-  bgColor: 'bg-blue-700',
-  textColor: 'text-white',
-})
+// const styled = reactive({
+//   label: 'Google',
+//   bgColor: 'bg-blue-700',
+//   textColor: 'text-white',
+// })
 </script>
 
 <template>
@@ -39,11 +39,11 @@ const styled = reactive({
         <template #btnIcon> <i-eva:close-outline /> </template>
       </GTag>
     </Variant>
-    <Variant title="Customized">
+    <!-- <Variant title="Customized">
       <GTag class="py-2" v-bind="styled" @clicked="hstEvent('Click', $event)">
         <template #btnIcon> <i-eva:close-outline /> </template>
       </GTag>
-    </Variant>
+    </Variant> -->
   </Story>
 </template>
 
