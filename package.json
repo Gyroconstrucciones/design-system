@@ -1,12 +1,15 @@
 {
-  "name": "vite-romarin",
+  "name": "gyro-design-system",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "extract-translations": "npx vue-i18n-extract",
-    "remove-translations": "npx vue-i18n-extract --remove"
+    "remove-translations": "npx vue-i18n-extract --remove",
+    "story:dev": "histoire dev",
+    "story:build": "histoire build",
+    "story:preview": "histoire preview"
   },
   "dependencies": {
     "@vueuse/core": "^7.2.2",
@@ -18,6 +21,7 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@histoire/plugin-vue": "^0.10.7",
     "@iconify/json": "^1.1.441",
     "@types/node": "^16.11.12",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
@@ -27,8 +31,10 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.2.0",
+    "histoire": "^0.10.7",
     "prettier": "2.5.1",
     "sass": "^1.45.0",
+    "tailwindcss": "^3.1.8",
     "typescript": "^4.5.3",
     "unplugin-icons": "^0.12.23",
     "unplugin-vue-components": "^0.17.8",
