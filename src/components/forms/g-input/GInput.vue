@@ -11,12 +11,13 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  model: String,
+  model: [String, Date, Number],
+  type: String,
   errors: Object as () => { $uid: string; $message: string }[],
 })
 
 const state = reactive({
-  value: '',
+  value: null as any,
 })
 
 const hasError = computed(() => props.errors && props.errors.length > 0)
@@ -35,11 +36,11 @@ onMounted(() => {
     <input
       :id="label"
       v-model="state.value"
-      type="text"
       :name="label"
       :class="`input ${hasError && 'input-error'}`"
       :disabled="disabled"
       :placeholder="placeholder"
+      :type="type"
       @input="$emit('onInput', state.value)"
     />
 
