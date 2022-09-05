@@ -6,15 +6,15 @@ const isCollapsed = ref(true)
 
 <template>
   <header
-    class="w-full relative z-10 flex-shrink-0 h-16 bg-white border-b border-gray-200 shadow-sm flex px-4 sm:px-6 items-center justify-between"
+    class="w-full relative z-10 flex-shrink-0 h-16 bg-white border-b border-gray-200 shadow-sm flex px-4 py-3 sm:px-6 items-center justify-between"
   >
     <div class="flex items-center justify-start">
       <slot name="left" />
     </div>
-    <div class="flex items-center justify-center h-0 md:h-auto overflow-y-hidden">
+    <div class="flex items-center justify-center h-0 !md:h-16 overflow-y-hidden">
       <slot name="center" />
     </div>
-    <div class="flex items-center justify-center space-x-4 sm:space-x-6 h-0 md:h-auto overflow-y-hidden">
+    <div class="flex items-center justify-center space-x-4 sm:space-x-6 h-0 !md:h-16 overflow-y-hidden">
       <slot name="right" />
     </div>
 
@@ -23,8 +23,8 @@ const isCollapsed = ref(true)
     </button>
     <!-- Mobile -->
     <div
-      class="shadow w-full text-sm px-4 sm:px-6 flex flex-col h-auto transition-all duration-400 overflow-y-hidden absolute top-16 left-0 bg-white text-gray-700"
-      :class="{ '!h-0': isCollapsed, 'py-6 !md:h-0 !md:py-0': !isCollapsed }"
+      class="shadow w-full text-sm px-4 !md:h-0 !md:py-0 sm:px-6 flex flex-col h-auto transition-all duration-400 overflow-y-hidden absolute top-16 left-0 bg-white text-gray-700"
+      :class="{ '!h-0': isCollapsed, 'py-6': !isCollapsed }"
     >
       <slot name="center" />
       <hr v-if="$slots.center && $slots.right" class="my-4" />

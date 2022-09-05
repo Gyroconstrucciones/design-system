@@ -1,6 +1,6 @@
 {
   "name": "gyro-design-system",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "https://github.com/Gyroconstrucciones/design-system",
   "files": [
     "dist"
@@ -14,18 +14,13 @@
     }
   },
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "extract-translations": "npx vue-i18n-extract",
-    "remove-translations": "npx vue-i18n-extract --remove",
     "story:dev": "histoire dev",
     "story:build": "histoire build",
     "story:preview": "histoire preview"
   },
   "dependencies": {
-    "vue": "^3.2.23",
-    "vue-router": "^4.0.12"
+    "vue": "^3.2.23"
   },
   "devDependencies": {
     "@histoire/plugin-vue": "^0.10.7",

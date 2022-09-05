@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <div
-    class="flex-1 grid overflow-x-hidden lg:py-2 lg:px-2 lg:grid-cols-5 gap-y-2 lg:gap-2 lg:overflow-hidden grid-cols-1 no-scrollbar px-1 py-1"
+    class="flex-1 grid h-full overflow-x-hidden lg:py-2 lg:px-2 lg:grid-cols-5 gap-y-2 lg:gap-2 lg:overflow-hidden grid-cols-1 no-scrollbar px-1 py-1"
   >
     <aside
       class="relative col-span-2 min-h-80 bg-white rounded-xl px-3 py-4 lg:px-6 flex flex-col overflow-auto shadow lg:max-h-none max-w-full"
