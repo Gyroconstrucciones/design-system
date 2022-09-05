@@ -4,27 +4,27 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    'CAvatar.story': typeof import('./src/components/utils/g-avatar copy/CAvatar.story.vue')['default']
     GAvatar: typeof import('./src/components/utils/g-avatar/GAvatar.vue')['default']
     'GAvatar.story': typeof import('./src/components/utils/g-avatar/GAvatar.story.vue')['default']
     GCard: typeof import('./src/components/utils/g-card/GCard.vue')['default']
     'GCard.story': typeof import('./src/components/utils/g-card/GCard.story.vue')['default']
     GInput: typeof import('./src/components/forms/g-input/GInput.vue')['default']
     'GInput.story': typeof import('./src/components/forms/g-input/GInput.story.vue')['default']
-    GInputsStory: typeof import('./src/components/GInputs-story.vue')['default']
-    GInputStory: typeof import('./src/components/forms/g-input/GInput-story.vue')['default']
     GLoader: typeof import('./src/components/utils/g-loader/GLoader.vue')['default']
     'GLoader.story': typeof import('./src/components/utils/g-loader/GLoader.story.vue')['default']
+    GNavbar: typeof import('./src/components/navigation/g-navbar/GNavbar.vue')['default']
+    'GNavbar.story': typeof import('./src/components/navigation/g-navbar/GNavbar.story.vue')['default']
+    GNavigationItem: typeof import('./src/components/navigation/g-navigation-item/GNavigationItem.vue')['default']
+    'GNavigationItem.story': typeof import('./src/components/navigation/g-navigation-item/GNavigationItem.story.vue')['default']
+    GSidebar: typeof import('./src/components/navigation/g-sidebar/GSidebar.vue')['default']
+    'GSidebar.story': typeof import('./src/components/navigation/g-sidebar/GSidebar.story.vue')['default']
     GTag: typeof import('./src/components/utils/g-tag/GTag.vue')['default']
     'GTag.story': typeof import('./src/components/utils/g-tag/GTag.story.vue')['default']
-    'GTag.stoyr': typeof import('./src/components/g-tag/GTag.stoyr.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    'IAkarIcons:googleFill': typeof import('~icons/akar-icons/google-fill')['default']
-    IEosIconsBubbleLoading: typeof import('~icons/eos-icons/bubble-loading')['default']
-    'IEva:closeCircleOutline': typeof import('~icons/eva/close-circle-outline')['default']
-    'IEva:closeOutline': typeof import('~icons/eva/close-outline')['default']
-    LanguageSwitcher: typeof import('./src/components/utils/LanguageSwitcher.vue')['default']
-    ToggleDark: typeof import('./src/components/utils/ToggleDark.vue')['default']
+    GTooltip: typeof import('./src/components/utils/g-tooltip/GTooltip.vue')['default']
+    'GTooltip.story': typeof import('./src/components/utils/g-tooltip/GTooltip.story.vue')['default']
+    GTwoColTitle: typeof import('./src/components/layouts/g-two-col-title/GTwoColTitle.vue')['default']
+    'GTwoColTitle.story': typeof import('./src/components/layouts/g-two-col-title/GTwoColTitle.story.vue')['default']
+    'IGg:menuGridO': typeof import('~icons/gg/menu-grid-o')['default']
   }
 }
 

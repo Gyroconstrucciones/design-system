@@ -1,9 +1,21 @@
 {
   "name": "gyro-design-system",
-  "version": "0.0.0",
+  "version": "0.0.2",
+  "repository": "https://github.com/Gyroconstrucciones/design-system",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/gyro-design-system.umd.js",
+  "module": "./dist/gyro-design-system.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/gyro-design-system.es.js",
+      "require": "./dist/gyro-design-system.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "extract-translations": "npx vue-i18n-extract",
     "remove-translations": "npx vue-i18n-extract --remove",
@@ -12,9 +24,7 @@
     "story:preview": "histoire preview"
   },
   "dependencies": {
-    "@vueuse/core": "^7.2.2",
     "vue": "^3.2.23",
-    "vue-i18n": "^9.2.0-beta.23",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
