@@ -1,11 +1,41 @@
-# Viro
+# G&RO Construcciones Design System
 
-Viro is a Vue 3 + Vite + WindiCSS + i18n starter template to scaffold new projects.
+As a company we have multiple products in different platforms where we were using some repetitive code and components, that's when G&RO's design system came to life. It's still really new and we are adding a lot of new components that already existed in our apps.
 
-## Table of contents
+## Roadmap
 
-- [Intro](#intro)
+### Forms
+- [ ] Input (In Progress)
+- [ ] CurrencyInput
+- [ ] InputFile
+- [ ] Select
+- [ ] Autocomplete
+- [ ] SearchBox
 
-## Intro
+### Layouts
+- [x] Two Columns With Title Layout
 
-G&RO Construcciones Design System
+### Navigation
+- [x] Navbar
+- [x] Navigation Item (Sidebar)(Improvement)
+- [x] Sidebar
+- [ ] Mobile Sidebar
+
+### Utils
+- [x] Avatar (Improvement)
+- [x] Card
+- [x] Loader
+- [x] Tag (Improvement)
+- [ ] Tooltip (In Progress)
+
+## Tech
+
+- WindiCSS
+- Histoire - TailwindCSS
+- Iconify
+- Typescript
+- Vite
+- Vue3
+- Eslint
+- Prettier
+- Sass
