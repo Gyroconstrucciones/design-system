@@ -1,23 +1,29 @@
 {
-  "name": "vite-romarin",
-  "version": "0.0.0",
+  "name": "gyro-design-system",
+  "version": "0.0.3",
+  "repository": "https://github.com/Gyroconstrucciones/design-system",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/gyro-design-system.umd.js",
+  "module": "./dist/gyro-design-system.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/gyro-design-system.es.js",
+      "require": "./dist/gyro-design-system.umd.js"
+    }
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
-    "extract-translations": "npx vue-i18n-extract",
-    "remove-translations": "npx vue-i18n-extract --remove"
+    "build": "vite build",
+    "story:dev": "histoire dev",
+    "story:build": "histoire build",
+    "story:preview": "histoire preview"
   },
   "dependencies": {
-    "@vueuse/core": "^7.2.2",
-    "axios": "^0.24.0",
-    "vue": "^3.2.23",
-    "vue-i18n": "^9.2.0-beta.23",
-    "vue-router": "^4.0.12",
-    "vue3-cookies": "^1.0.6",
-    "vuex": "^4.0.2"
+    "vue": "^3.2.23"
   },
   "devDependencies": {
+    "@histoire/plugin-vue": "^0.10.7",
     "@iconify/json": "^1.1.441",
     "@types/node": "^16.11.12",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
@@ -27,8 +33,10 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.2.0",
+    "histoire": "^0.10.7",
     "prettier": "2.5.1",
     "sass": "^1.45.0",
+    "tailwindcss": "^3.1.8",
     "typescript": "^4.5.3",
     "unplugin-icons": "^0.12.23",
     "unplugin-vue-components": "^0.17.8",
@@ -38,7 +46,6 @@
     "vite-plugin-vue-layouts": "^0.5.0",
     "vite-plugin-windicss": "^1.5.4",
     "vue-eslint-parser": "^8.0.1",
-    "vue-i18n-extract": "^2.0.4",
     "vue-tsc": "^0.28.10",
     "windicss": "^3.2.1"
   }
