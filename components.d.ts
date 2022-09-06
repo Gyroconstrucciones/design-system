@@ -24,6 +24,7 @@ declare module 'vue' {
     'GTooltip.story': typeof import('./src/components/utils/g-tooltip/GTooltip.story.vue')['default']
     GTwoColTitle: typeof import('./src/components/layouts/g-two-col-title/GTwoColTitle.vue')['default']
     'GTwoColTitle.story': typeof import('./src/components/layouts/g-two-col-title/GTwoColTitle.story.vue')['default']
+    IEosIconsBubbleLoading: typeof import('~icons/eos-icons/bubble-loading')['default']
     'IGg:menuGridO': typeof import('~icons/gg/menu-grid-o')['default']
   }
 }
