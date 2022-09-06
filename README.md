@@ -1,6 +1,6 @@
 # G&RO Construcciones Design System
 
-As a company we have multiple products in different platforms where we were using some repetitive code and components, that's when G&RO's design system came to life. It's still really new and we are adding a lot of new components that already existed in our apps.
+As a company we have multiple products in different platforms where we were using some repetitive code and components, that's when G&RO's design system came to life. It's still really new and we are adding various components.
 
 ## Roadmap
 
