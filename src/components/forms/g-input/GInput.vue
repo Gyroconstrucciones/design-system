@@ -32,12 +32,15 @@ onMounted(() => {
 
 <template>
   <div>
-    <label class="leading-7 text-sm text-gray-600" :class="`${hasError && 'text-red-400'}`">Label</label>
+    <label class="leading-7 text-sm text-gray-600" :class="{ 'text-red-400': hasError }">{{ label }}</label>
     <input
       :id="label"
       v-model="state.value"
       :name="label"
-      :class="`input ${hasError && 'input-error'}`"
+      :class="{
+        input: true,
+        'input-error': hasError,
+      }"
       :disabled="disabled"
       :placeholder="placeholder"
       :type="type"

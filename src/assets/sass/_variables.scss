@@ -3,3 +3,15 @@ $bg-main: white;
 html.dark {
   @apply bg-dark-800 text-light-900;
 }
+
+.btn {
+  @apply ml-6 flex items-center justify-center px-4 py-3 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-secondary-900 hover:bg-secondary-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-800;
+}
+
+.input {
+  @apply w-full bg-white rounded border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-100 text-base outline-none text-gray-700 py-2 px-5 leading-8 transition-colors duration-200 ease-in-out;
+}
+
+.input-error {
+  @apply input border-red-300;
+}

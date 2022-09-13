@@ -1,3 +1,6 @@
+import 'virtual:windi.css'
+import '../assets/sass/app.scss'
+
 export { default as GInput } from './forms/g-input/GInput.vue'
 // Utils
 export { default as GCard } from './utils/g-card/GCard.vue'
