@@ -6,6 +6,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     GAvatar: typeof import('./src/components/utils/g-avatar/GAvatar.vue')['default']
     'GAvatar.story': typeof import('./src/components/utils/g-avatar/GAvatar.story.vue')['default']
+    GButton: typeof import('./src/components/forms/g-button/GButton.vue')['default']
     GCard: typeof import('./src/components/utils/g-card/GCard.vue')['default']
     'GCard.story': typeof import('./src/components/utils/g-card/GCard.story.vue')['default']
     GInput: typeof import('./src/components/forms/g-input/GInput.vue')['default']

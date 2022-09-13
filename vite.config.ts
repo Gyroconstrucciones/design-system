@@ -6,6 +6,7 @@ import eslintPlugin from 'vite-plugin-eslint'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
+import dts from 'vite-plugin-dts'
 
 import WindiCSS from 'vite-plugin-windicss'
 import path from 'path'
@@ -23,14 +24,15 @@ export default defineConfig({
       output: {
         // Provide global variables to use in the UMD build
         // Add external deps here
-        globals: {
-          vue: 'Vue',
-        },
+        globals: { vue: 'Vue' },
       },
     },
   },
   plugins: [
     vue(),
+    dts({
+      insertTypesEntry: true,
+    }),
     Pages(),
     Layouts({
       defaultLayout: 'index',
