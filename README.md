@@ -39,3 +39,20 @@ As a company we have multiple products in different platforms where we were usin
 - Eslint
 - Prettier
 - Sass
+
+## How To Use It?
+
+```
+npm i --save gyro-design-system
+```
+
+In your main entry file (main.ts - index.ts ....) import the library Styles
+```
+import 'gyro-design-system/dist/style.css'
+```
+
+And to use each component you'll have to import it wherever you need it.
+```
+import { GCard } from 'gyro-design-system'
+import { GInput } from 'gyro-design-system'
+``` 

@@ -6,7 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.4] - 2022-09-13
+#### author: Ashley Guevara
+### Added
+- Classes for design
+- Styles in export file
+- Plugin for types
+- Config for export in windi
 
+### Removed
+- Unused packages
+- Unused files
 
 ## [0.0.3] - 2022-09-05
 #### author: Ashley Guevara
@@ -29,4 +39,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 [Unreleased]:
-[0.0.4]: 
+[0.0.5]: 
