@@ -43,16 +43,16 @@ As a company we have multiple products in different platforms where we were usin
 ## How To Use It?
 
 ```
-npm i --save gyro-design-system
+npm i --save gyro-ds
 ```
 
 In your main entry file (main.ts - index.ts ....) import the library Styles
 ```
-import 'gyro-design-system/dist/style.css'
+import 'gyro-ds/dist/style.css'
 ```
 
 And to use each component you'll have to import it wherever you need it.
 ```
-import { GCard } from 'gyro-design-system'
-import { GInput } from 'gyro-design-system'
+import { GCard } from 'gyro-ds'
+import { GInput } from 'gyro-ds'
 ``` 

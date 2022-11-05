@@ -1,17 +1,17 @@
 {
-  "name": "gyro-design-system",
-  "version": "0.0.4",
+  "name": "gyro-ds",
+  "version": "0.0.3",
   "repository": "https://github.com/Gyroconstrucciones/design-system",
   "files": [
     "dist"
   ],
-  "main": "./dist/gyro-design-system.umd.js",
+  "main": "./dist/gyro-ds.umd.js",
   "types": "dist/index.d.ts",
-  "module": "./dist/gyro-design-system.es.js",
+  "module": "./dist/gyro-ds.es.js",
   "exports": {
     ".": {
-      "import": "./dist/gyro-design-system.es.js",
-      "require": "./dist/gyro-design-system.umd.js"
+      "import": "./dist/gyro-ds.es.js",
+      "require": "./dist/gyro-ds.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },

@@ -16,8 +16,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, './src/components/index.js'),
-      name: 'gyro-design-system',
-      fileName: (format) => `gyro-design-system.${format}.js`,
+      name: 'gyro-ds',
+      fileName: (format) => `gyro-ds.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],

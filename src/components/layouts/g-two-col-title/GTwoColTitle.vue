@@ -1,24 +1,35 @@
 <script setup lang="ts">
 defineProps({
   title: String,
+  activePanel: String,
 })
 </script>
 
 <template>
-  <div
-    class="flex-1 grid h-full overflow-x-hidden lg:py-2 lg:px-2 lg:grid-cols-5 gap-y-2 lg:gap-2 lg:overflow-hidden grid-cols-1 no-scrollbar px-1 py-1"
-  >
-    <aside
-      class="relative col-span-2 min-h-80 bg-white rounded-xl px-3 py-4 lg:px-6 flex flex-col overflow-auto shadow lg:max-h-none max-w-full"
-    >
-      <div class="flex items-center justify-between">
-        <h1 class="lg:text-lg text-lg font-semibold leading-none">{{ title }}</h1>
+  <div class="h-full flex-1 flex flex-col gap-5 overflow-hidden">
+    <section class="flex w-full items-center justify-between">
+      <h1 class="lg:text-2xl text-lg font-semibold leading-none">
+        {{ title }}
+      </h1>
+      <div class="flex">
         <slot name="actions"></slot>
       </div>
-      <slot name="aside"></slot>
-    </aside>
-    <div class="bg-white lg:mt-0 col-span-3 shadow px-4 py-5 rounded-lg p-6 overflow-y-scroll no-scrollbar">
-      <slot name="main"></slot>
-    </div>
+    </section>
+    <section class="w-full h-full flex gap-2 overflow-hidden">
+      <div
+        class="relative h-full bg-white rounded-xl flex flex-col overflow-hidden shadow transition-all duration-500"
+        :class="{ 'w-full px-3 py-4 lg:px-6': activePanel != 'right', 'w-5': activePanel == 'right' }"
+      >
+        <div class="h-full overflow-hidden relative">
+          <slot v-if="activePanel !== 'right'" name="aside"></slot>
+        </div>
+      </div>
+      <div
+        class="relative h-full bg-white rounded-xl flex flex-col overflow-auto shadow transition-all duration-500"
+        :class="{ 'w-full px-3 py-4 lg:px-6': activePanel == 'right', 'w-5': activePanel != 'right' }"
+      >
+        <slot v-if="activePanel == 'right'" name="main"></slot>
+      </div>
+    </section>
   </div>
 </template>
