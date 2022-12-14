@@ -6,6 +6,7 @@ As a company we have multiple products in different platforms where we were usin
 
 ### Forms
 - [ ] Input (In Progress)
+- [x] Select
 - [ ] CurrencyInput
 - [ ] InputFile
 - [ ] Select

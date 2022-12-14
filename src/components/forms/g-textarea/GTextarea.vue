@@ -12,7 +12,6 @@ const props = defineProps({
     default: false,
   },
   model: [String, Date, Number],
-  type: String,
   errors: Object as () => { $uid: string; $message: string }[],
 })
 
@@ -35,7 +34,7 @@ onMounted(() => {
     <label class="leading-7 text-sm text-gray-600 dark:text-gray-300" :class="{ 'text-red-400': hasError }">{{
       label
     }}</label>
-    <input
+    <textarea
       :id="label"
       v-model="state.value"
       :name="label"
@@ -45,7 +44,6 @@ onMounted(() => {
       }"
       :disabled="disabled"
       :placeholder="placeholder"
-      :type="type"
       @input="$emit('onInput', state.value)"
     />
 

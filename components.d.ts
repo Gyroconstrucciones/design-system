@@ -21,11 +21,11 @@ declare module 'vue' {
     'GSidebar.story': typeof import('./src/components/navigation/g-sidebar/GSidebar.story.vue')['default']
     GTag: typeof import('./src/components/utils/g-tag/GTag.vue')['default']
     'GTag.story': typeof import('./src/components/utils/g-tag/GTag.story.vue')['default']
+    GTextarea: typeof import('./src/components/forms/g-textarea/GTextarea.vue')['default']
     GTooltip: typeof import('./src/components/utils/g-tooltip/GTooltip.vue')['default']
     'GTooltip.story': typeof import('./src/components/utils/g-tooltip/GTooltip.story.vue')['default']
     GTwoColTitle: typeof import('./src/components/layouts/g-two-col-title/GTwoColTitle.vue')['default']
     'GTwoColTitle.story': typeof import('./src/components/layouts/g-two-col-title/GTwoColTitle.story.vue')['default']
-    IEosIconsBubbleLoading: typeof import('~icons/eos-icons/bubble-loading')['default']
     'IGg:menuGridO': typeof import('~icons/gg/menu-grid-o')['default']
   }
 }

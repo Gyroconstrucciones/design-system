@@ -27,7 +27,7 @@ defineEmits<{
     </div>
     <button
       v-if="$slots.btnIcon"
-      class="transition-all bg-gray-200 hover:transform hover:scale-105 shadow-md flex items-center justify-center cursor-pointer absolute -top-1 -right-1 z-10 rounded-full w-7 h-7 text-xl"
+      class="transition-all bg-gray-100 hover:transform hover:scale-105 shadow-md flex items-center justify-center cursor-pointer absolute -top-1 -right-1 z-10 rounded-full w-7 h-7 text-xl"
       :class="`${bgColor} !${textColor}`"
       @click="$emit('clicked')"
     >

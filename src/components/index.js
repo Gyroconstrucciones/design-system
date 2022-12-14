@@ -2,6 +2,7 @@ import 'virtual:windi.css'
 import '../assets/sass/app.scss'
 
 export { default as GInput } from './forms/g-input/GInput.vue'
+export { default as GTextarea } from './forms/g-textarea/GTextarea.vue'
 // Utils
 export { default as GCard } from './utils/g-card/GCard.vue'
 export { default as GLoader } from './utils/g-loader/GLoader.vue'
